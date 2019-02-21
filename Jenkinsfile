@@ -18,7 +18,7 @@ stages{
             post {
                 success {
                     echo 'Now Archiving...'
-                    archiveArtifacts artifacts: '**/target/*.war' ## Mention full path here
+                    archiveArtifacts artifacts: '**/target/*.war' ## Mention full path here "C:\Program Files (x86)\Jenkins\workspace\maven-project\webapp\target" - this is in windows
                 }
             }
         }
